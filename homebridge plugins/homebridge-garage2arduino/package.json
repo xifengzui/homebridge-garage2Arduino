@@ -1,0 +1,21 @@
+{
+  "name": "homebridge-garage2arduino",
+  "version": "1.0.0",
+  "description": "a homebridge plugin,aim to transfer the garage command to ardiuno. the ardiuno use ESP8266 to connect 2 your home network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "plugin",
+    "ardiuno"
+  ],
+  "engines": {
+    "node": ">=4.4.0",
+    "homebridge": ">=0.3.0"
+  },
+  "author": "xifengzui",
+  "license": "ISC"
+}

@@ -1,0 +1,16 @@
+名称						价格	数量	用途	TB地址	备注
+ESP8266串口WIFI无线模块WIF收发无线模块		9.4	1	数据收发	https://detail.tmall.com/item.htm?id=540067174120&spm=a1z09.2.0.0.xazHRp&_u=v96l7ape468
+Arduino Nano V3 ATMega328P			9.2	1	主控	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=531487412230&_u=v96l7apf7c1	
+4路带继电器光耦模块				6.59	1	电机控制	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=6731653313&_u=v96l7ap744f	
+220V转5V电源模块				10.5	1	总电源	https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm?spm=a21bo.50862.1997525045.2.RBEhap	
+电源3脚插座					5	1	电源头	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=520812099558&_u=v96l7apd51a
+电源3脚插母					4.5	1	电源母头	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=523912847491&_u=v96l7ap084a	
+触摸按钮					2.6	3	按钮	https://detail.tmall.com/item.htm?id=524832982387&spm=a1z09.2.0.0.xazHRp&_u=v96l7ap4716	按钮功能
+旋转编码器					5	1	旋钮	https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm?spm=a21bo.50862.1997525045.2.RBEhap	旋钮
+5V转3.3V DCDC电源模块				4	1	3v3电源	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=534263863865&_u=v96l7ap15f1	给ESP8266供电
+6pin排线					0.6	1	排线	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=542126237591&_u=v96l7ap46ef	连接继电器模块的
+M3螺丝若干	 	 	 	 	 
+ 	 	 	 	 	 
+总价	57.3	 	 	 	 
+
+
