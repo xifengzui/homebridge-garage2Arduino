@@ -171,6 +171,7 @@ Uint8 APP_dumpPrms(void)
     gApp_wifiPrms.srvIp[2] = EEPROM_restore(EEPROM_SRVIPSEG2);
     gApp_wifiPrms.srvIp[3] = EEPROM_restore(EEPROM_SRVIPSEG3);
     gApp_wifiPrms.devId = EEPROM_restore(EEPROM_DEVID);
+    gAPP_garagePrms.isEnableHomeKit = EEPROM_restore(EEPROM_ISENHOMEKIT);
 }
 /*****************************************************************************
 * Author  : 惜枫醉
@@ -214,6 +215,11 @@ Uint8 APP_flushPrms(void)
     if(gApp_wifiPrms.devId !=  EEPROM_restore(EEPROM_DEVID))
     {
         EEPROM_store(EEPROM_DEVID, gApp_wifiPrms.devId);
+    }
+
+    if(gAPP_garagePrms.isEnableHomeKit != EEPROM_restore(EEPROM_ISENHOMEKIT))
+    {
+        EEPROM_store(EEPROM_ISENHOMEKIT, gAPP_garagePrms.isEnableHomeKit);
     }
 }
 /*****************************************************************************
@@ -553,9 +559,9 @@ Int8 APP_menuGen(void)
 {
     MENU_init();
     Int8 ret = 0;
+    APP_dumpPrms();
 	TIMER_register(4000, APP_timerDaemon);
 	TIMER_register(1000,APP_clockService);
-    APP_dumpPrms();
     //申请主页
     ret |= MENU_requestPage(&gMainMenu);
     ret |= MENU_setPageTitle(gMainMenu,PSTR("GARAGE CONTROLER"), TEXT_FLASH);
@@ -973,6 +979,7 @@ Int8 APP_garageEnableHomekit(void * prms)
 	
 	APP_drawText(4, TEXT_ALIGN_MIDDLE, PSTR("ENABLE HOMEKIT"), 14, TEXT_FLASH);
 	gAPP_garagePrms.isEnableHomeKit = 1;
+    APP_flushPrms();
 	delay(2000);
 	return 0;
 }
@@ -990,6 +997,7 @@ Int8 APP_garageDisalbeHomekit(void * prms)
 {
 	APP_drawText(4, TEXT_ALIGN_MIDDLE, PSTR("DISABLE HOMEKIT"), 14, TEXT_FLASH);
 	gAPP_garagePrms.isEnableHomeKit = 0;
+    APP_flushPrms();
 	delay(2000);
 	return 0;
 }
