@@ -10,9 +10,11 @@ this project is a  complete project which aim to use siri to control my  garage.
 
 **sch pcb** :mother board for DCDC Power module,Arduino Nano V3,ESP8266 wifi module,OLED Screen,Relay module,Rotray Encoder and 3 touch button.(Altium Designer 14.1)
 
-**model**bracket (Sketchup Pro 2015)
+**model**:   bracket (Sketchup Pro 2015)
 
 Read More: http://www.arkis.me
+
+
 
 本项目包含一个完整使用siri控制车库的所有内容。
 
@@ -20,11 +22,27 @@ Read More: http://www.arkis.me
 
 homebridge插件:转接homebridge命令为socket通讯，控制车库控制器
 
-电路原理图及制版图:主板，用于支持220V转5V电源，3v3电源，Arduino Nano V3,ESP8266无线模块，OLED屏幕，继电器，旋转编码器及3个触摸按钮
+电路原理图及制版图:主板，用于支持220V转5V电源，3v3电源，Arduino Nano V3,ESP8266无线模块，
+
+OLED屏幕，继电器，旋转编码器及3个触摸按钮
 
 3d模型:可用于3D打印的外壳模型。
 
 具体说明请查看 http://www.arkis.me
+
+
+
+![https://github.com/xifengzui/homebridge-garage2Arduino/blob/master/imgs/DataFlow.png](workingflow)
+
+
+
+![https://github.com/xifengzui/homebridge-garage2Arduino/blob/master/imgs/NetWork.png](network topology)
+
+
+
+![https://github.com/xifengzui/homebridge-garage2Arduino/blob/master/imgs/Hardware.png](hardware)
+
+
 
 
 
