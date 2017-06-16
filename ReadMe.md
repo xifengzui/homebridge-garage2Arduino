@@ -6,11 +6,11 @@ this project is a  complete project which aim to use siri to control my  garage.
 
 **It contains**  
 
-**homebridge plug-ins**: garage controller plugins.
+**Homebridge plug-ins**: garage controller plugins.
 
-**sch pcb** :mother board for DCDC Power module,Arduino Nano V3,ESP8266 wifi module,OLED Screen,Relay module,Rotray Encoder and 3 touch button.(Altium Designer 14.1)
+**Sch Pcb** :mother board for DCDC Power module,Arduino Nano V3,ESP8266 wifi module,OLED Screen,Relay module,Rotray Encoder and 3 touch button.(Altium Designer 14.1)
 
-**model**:   bracket (Sketchup Pro 2015)
+**Model**:   bracket (Sketchup Pro 2015)
 
 Read More: http://www.arkis.me
 
@@ -20,7 +20,7 @@ Read More: http://www.arkis.me
 
 包含了以下内容
 
-homebridge插件:转接homebridge命令为socket通讯，控制车库控制器
+Homebridge插件:转接homebridge命令为socket通讯，控制车库控制器
 
 电路原理图及制版图:主板，用于支持220V转5V电源，3v3电源，Arduino Nano V3,ESP8266无线模块，
 
@@ -30,17 +30,19 @@ OLED屏幕，继电器，旋转编码器及3个触摸按钮
 
 具体说明请查看 http://www.arkis.me
 
+**Working Flow**
 
-
-![https://github.com/xifengzui/homebridge-garage2Arduino/blob/master/imgs/DataFlow.png](workingflow)
-
-
-
-![https://github.com/xifengzui/homebridge-garage2Arduino/blob/master/imgs/NetWork.png](network topology)
+![dataflow](https://raw.githubusercontent.com/xifengzui/homebridge-garage2Arduino/master/imgs/DataFlow.png)
 
 
 
-![https://github.com/xifengzui/homebridge-garage2Arduino/blob/master/imgs/Hardware.png](hardware)
+**Network Topology**
+
+![network topology](https://raw.githubusercontent.com/xifengzui/homebridge-garage2Arduino/master/imgs/NetWork.png)
+
+**Hardware**
+
+![hardware](https://raw.githubusercontent.com/xifengzui/homebridge-garage2Arduino/master/imgs/Hardware.png)
 
 
 
