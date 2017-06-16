@@ -107,12 +107,12 @@ Int8 KEY_get(KEY_Id id)
 	{
 		case KEY_UP:
 		{
-            keyValue = !digitalRead(4);
+            keyValue = !digitalRead(6);
             break;
 		}
 		case KEY_DOWN:
 		{
-            keyValue = !digitalRead(6);
+            keyValue = !digitalRead(4);
             break;
 		}
 		case KEY_STOP:

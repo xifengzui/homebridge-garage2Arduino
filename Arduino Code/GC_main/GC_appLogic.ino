@@ -268,7 +268,8 @@ Uint8 APP_drawText(Uint16 line, Uint8 margin, Uint8 *text, Uint8 textlen, Uint8 
 * Remarks : 
 ******************************************************************************/
 Uint8 APP_openGetNumberDialog(char *textTitle, Uint8 initVal,Uint8 minVal,Uint8 maxVal, Uint8 *youtTextType)
-{ 
+{
+ 
     Int8 errVal = 0;
     Uint8 tmpNumberBuf[4];
     Uint8 val = 0;
@@ -790,19 +791,28 @@ void APP_timerService(void)
 	{
 		//ret |= WIFI_disconnect(0);
 		delay(250);
-		WIFI_debug(1);
+		//WIFI_debug(1);
 		ret = WIFI_LinkServer(TCP,gApp_wifiPrms.srvIp,10470,0);
 		if(ret)
 		{
 			dbgMsg("Link to server failed.\n");
 		}
-		WIFI_debug(0);
+		//WIFI_debug(0);
 	}
 
 	ret = WIFI_readData(1,  &recvPtr, &id, &recvLen, 800);
 	if(ret)
 	{
         dbgMsg("\nrecv failed.\n");
+        ret |= WIFI_disconnect(0);
+		delay(250);
+		//WIFI_debug(1);
+		ret = WIFI_LinkServer(TCP,gApp_wifiPrms.srvIp,10470,0);
+		if(ret)
+		{
+			dbgMsg("Link to server failed.\n");
+		}
+		//WIFI_debug(0);
         return;
 	}
 
@@ -812,15 +822,35 @@ void APP_timerService(void)
     {
         dbgMsg("opening\n");
         gAPP_garagePrms.status = STAT_HK_CLOSE;
+        goto END;
     }
 
     sprintf(tmpBuf,"STATUS:%u",STAT_HK_OPEN);
-
     if(strstr(recvPtr,tmpBuf) != NULL)
     {
         dbgMsg("closing\n");
         gAPP_garagePrms.status = STAT_HK_OPEN;
+        goto END;
     }
+
+    sprintf(tmpBuf,"STATUS:%u",STAT_HK_IDEL);
+    if(strstr(recvPtr,tmpBuf) != NULL)
+    {
+        dbgMsg("idel\n");
+        goto END;
+    }
+
+    dbgMsg("\ncommand failed.\n");
+    ret |= WIFI_disconnect(0);
+    delay(250);
+    ret = WIFI_LinkServer(TCP,gApp_wifiPrms.srvIp,10470,0);
+    if(ret)
+    {
+        dbgMsg("Link to server failed.\n");
+    }
+    
+    END:
+    return;
     
 }
 

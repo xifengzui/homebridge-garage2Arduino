@@ -10,7 +10,7 @@ this project is a  complete project which aim to use siri to control my  garage.
 
 **sch pcb** :mother board for DCDC Power module,Arduino Nano V3,ESP8266 wifi module,OLED Screen,Relay module,Rotray Encoder and 3 touch button.(Altium Designer 14.1)
 
-**3d model:**bracket (Sketchup Pro 2015)
+**model**bracket (Sketchup Pro 2015)
 
 Read More: http://www.arkis.me
 
