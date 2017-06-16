@@ -9,8 +9,8 @@ Arduino Nano V3 ATMega328P			9.2	1	主控	https://item.taobao.com/item.htm?spm=a1z
 旋转编码器					5	1	旋钮	https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm?spm=a21bo.50862.1997525045.2.RBEhap	旋钮
 5V转3.3V DCDC电源模块				4	1	3v3电源	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=534263863865&_u=v96l7ap15f1	给ESP8266供电
 6pin排线					0.6	1	排线	https://item.taobao.com/item.htm?spm=a1z09.2.0.0.xazHRp&id=542126237591&_u=v96l7ap46ef	连接继电器模块的
-M3螺丝若干	 	 	 	 	 
- 	 	 	 	 	 
+M3螺丝若干	 	 	 	
+OLED Screen                                     14.8    1       显示屏  https://item.taobao.com/item.htm?spm=a1z09.2.0.0.3NjgBQ&id=40854288700&_u=g96l7ap0f8b	 	 
 总价	57.3	 	 	 	 
 
 
