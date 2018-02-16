@@ -10,7 +10,7 @@ module.exports = (homebridge) => {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
   DoorState = homebridge.hap.Characteristic.CurrentDoorState
-  homebridge.registerAccessory('homebridge-garage2arduino', 'Garage2Ardiuno', Garage2Ardiuno);
+  homebridge.registerAccessory('homebridge-garage2arduino', 'garage2arduino', Garage2Ardiuno);
 };
 
 //constructor function
@@ -162,6 +162,8 @@ net.createServer(function(sock)
         openflag = 6;
 
       },200);
-        
-    });
+  });
+  sock.on('error', function(err) {
+           console.log("error catch-",err);
+  });
 }).listen(PORT, HOST);
